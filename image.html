@@ -1,0 +1,47 @@
+<html>
+<head>
+
+<script>
+function SetRes(){
+  var mf = document.getElementById("res-form");
+  var w = document.getElementById("s-w").value;
+  var h = document.getElementById("s-h").value;
+  // console.log(w + " " + h); 
+  var idHolder = "";
+  for(var i = 0; i < 4; i++){
+    idHolder = ""; 
+    idHolder = "img" + i;
+    var myURL="";
+    myURL = "https://picsum.photos/" + h + "/" + w + "/?imgae=" + i;
+    //myURL = "https://source.unsplash.com/random";
+    console.log(myURL);
+    console.log(h + " " + w);
+    document.getElementById(idHolder).src = myURL;
+  }
+
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="res-form" id="res-form">
+choose a screen width<br>
+<input type="text" name="width" id="s-w"><br>
+choose a screen height<br>
+<input type="text" name="height" id="s-h"><br>
+<button onclick="SetRes()">find wall-papers</button>
+</div>
+
+
+
+<div class="canvas" id="canvas">
+<img class="canvas-img" id="img1" src="">
+<img class="canvas-img" id="img2" src="">
+<img class="canvas-img" id="img3" src="">
+<img class="canvas-img" id="img0" src="">
+</div>
+
+</body>
+</html>
