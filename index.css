@@ -65,6 +65,12 @@
     padding: 0 4px;
 }
 
+#row{
+  display:none;
+
+}
+
+
 /* Create four equal columns that sits next to each other */
 .column {
     -ms-flex: 25%; /* IE10 */
