@@ -1,7 +1,26 @@
 <html>
 <head>
 </head>
+<link rel="stylesheet" href="index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="#" class="active">Jokes</a>
+  <a href="vedio.html">Vedio</a>
+  <a href="image.html">Wallpaper</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
 
 
 <body>
