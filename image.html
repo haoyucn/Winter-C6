@@ -1,6 +1,7 @@
 <html>
 <head>
-
+<link rel="stylesheet" href="index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
 function SetRes(){
   var mf = document.getElementById("res-form");
@@ -18,7 +19,16 @@ function SetRes(){
     console.log(h + " " + w);
     document.getElementById(idHolder).src = myURL;
   }
-
+}
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
 }
 </script>
 
@@ -26,21 +36,39 @@ function SetRes(){
 
 <body>
 
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+
+
+
 <div class="res-form" id="res-form">
-choose a screen width<br>
+<label for="s-w">choose a screen width</label>
 <input type="text" name="width" id="s-w"><br>
-choose a screen height<br>
+<label for="s-h">choose a screen height</label>
 <input type="text" name="height" id="s-h"><br>
 <button onclick="SetRes()">find wall-papers</button>
 </div>
 
 
+<div class="row">
+<div class="column" id="canvas">
+<img id="img1" src="">
+<img id="img2" src="">
+</div>
 
-<div class="canvas" id="canvas">
-<img class="canvas-img" id="img1" src="">
-<img class="canvas-img" id="img2" src="">
-<img class="canvas-img" id="img3" src="">
-<img class="canvas-img" id="img0" src="">
+
+<div class="column">
+<img id="img3" src="">
+<img id="img0" src="">
+</div>
 </div>
 
 </body>
