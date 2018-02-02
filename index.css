@@ -101,23 +101,7 @@
         max-width: 100%;
     }
 }
-
-img {
-  width: 100%;
+img{
+width: 100%;
 }
 
-.jokep {
-  font-family: 'Indie Flower', cursive;
-  font-family: 'Hind', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    padding-bottom: 40px;
-}
-
-.jokenum {
-  font-family: 'Indie Flower', cursive;
-  font-family: 'Luckiest Guy', cursive;
-  font-size: 30px;
-  text-align: center;
-  padding-bottom: 40px;
-}
