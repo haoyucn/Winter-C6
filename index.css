@@ -1,5 +1,7 @@
 
 .topnav {
+  margin-left: 150px;
+    margin-right: 150px;
   overflow: hidden;
   background-color: #333;
 }
@@ -52,7 +54,7 @@
 }
 @media screen and (min-width: 600px) {
   .topnav a {
-    width: 20%;
+    width: 22.88%;
   }
 }
 
@@ -102,6 +104,61 @@
     }
 }
 img{
-width: 100%;
+  width: 400px;
 }
 
+.jokep {
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 40px;
+}
+
+.jokenum {
+  font-family: 'Luckiest Guy', cursive;
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 40px;
+}
+
+#random_player {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.res-form {
+  padding-top: 50 px;
+  padding-left: 700px;
+  padding-right: 700px;
+  padding-top: 50 px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.jokeimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 300px;
+}
+
+.introimg {
+  padding-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 300px;
+}
+
+body {
+  background-color: #e6f3ff;
+}

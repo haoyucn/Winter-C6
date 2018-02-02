@@ -1,0 +1,54 @@
+<html>
+<head>
+<link rel="stylesheet" href="index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+    var videos = ["https://www.youtube.com/embed/9bZkp7q19f0", "https://www.youtube.com/embed/dQw4w9WgXcQ"];
+    window.onload = function () {
+        var playerDiv = document.getElementById("random_player");
+        var player = document.createElement("IFRAME");
+        var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+        player.setAttribute('width', '640');
+        player.setAttribute('height', '390');
+        player.setAttribute('src', randomVideoUrl);
+        playerDiv.appendChild(player);
+    };
+</script>
+
+</head>
+
+<body>
+
+
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="joke.html">Jokes</a>
+  <a href="#" class="active">Video</a>
+  <a href="image.html">Wallpaper</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<p class="jokep">
+  Welcome to random youtube video generator!
+</p>
+<p class="jokep">
+  random youtube video for today
+</p>
+<body>
+  <div align="center">
+    <div id="random_player" />
+  </div>
+</body>
+
+
+
+
+
+
+
+<div class="footer">
+  <p>&copy; <a href="https://github.com/haoyucn/Winter-C6" style="color:white">Creative Project</a> All rights reserved</p>
+</div>
+</body>
+</html>

@@ -7,10 +7,10 @@ function SetRes(){
   var mf = document.getElementById("res-form");
   var w = document.getElementById("s-w").value;
   var h = document.getElementById("s-h").value;
-  // console.log(w + " " + h); 
+  // console.log(w + " " + h);
   var idHolder = "";
   for(var i = 0; i < 4; i++){
-    idHolder = ""; 
+    idHolder = "";
     idHolder = "img" + i;
     var myURL="";
     myURL = "https://picsum.photos/" + h + "/" + w + "/?imgae=" + i;
@@ -39,12 +39,14 @@ function myFunction() {
 <div class="topnav" id="myTopnav">
   <a href="index.html">Home</a>
   <a href="joke.html">Jokes</a>
-  <a href="vedio.html">Vedio</a>
+  <a href="vedio.html">Video</a>
   <a href="#" class="active">Wallpaper</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
-
+<p class="jokep" padding-bottom: 10px>
+  Welcome to random wallpaper generator!
+</p>
 
 <div class="res-form" id="res-form">
 <label for="s-w">choose a screen width</label>
@@ -57,16 +59,18 @@ function myFunction() {
 
 <div class="row" display: none >
 <div class="column" id="canvas">
-<img id="img1" src="https://picsum.photos/200/300/?random">
-<img id="img2" src="https://picsum.photos/600/400/?random">
+<img id="img1" src="https://picsum.photos/200/300/?random" >
+<img id="img2" src="https://picsum.photos/600/400/?random" >
 </div>
 
 
 <div class="column">
-<img id="img3" src="https://picsum.photos/800/600/?random">
-<img id="img0" src="https://picsum.photos/1024/768/?random">
+<img id="img3" src="https://picsum.photos/800/600/?random" >
+<img id="img0" src="https://picsum.photos/1024/768/?random" >
 </div>
 </div>
-
+<div class="footer">
+  <p>&copy; <a href="https://github.com/haoyucn/Winter-C6" style="color:white">Creative Project</a> All rights reserved</p>
+</div>
 </body>
 </html>
